@@ -1,0 +1,140 @@
+.App {
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.App .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 4%;
+}
+
+.App .h-custom {
+  font-size: 50px;
+  color: #31C3BD;
+  
+}
+
+.App .h-custom:nth-child(2) {
+  color: #F2B137;
+}
+
+.App .card {
+  width: 30%;
+  height: 20%;
+  border-radius: 10px;
+  background: #1F3641;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px -8px 0px 0px #10212A inset;
+}
+
+.App .cpu-btn {
+  color: #1A2A33;
+  font-family: Outfit;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  width: 30%;
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background: var(--light-yellow-hover, #FFC860);
+  box-shadow: 0px -8px 0px 0px #CC8B13 inset;
+}
+
+.App .player-btn {
+  color: #1A2A33;
+  font-family: Outfit;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  width: 30%;
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background: var(--light-blue-hover, #65E9E4);
+  box-shadow: 0px -8px 0px 0px #118C87 inset;
+}
+
+.App .choose-btn{
+  display: flex;
+  flex-direction: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  width: 90%;
+  height: 45%;
+  border-radius: 15px;
+  justify-content: space-around;
+  align-items: center;
+  background: #1A2A33;
+  padding: 0 10px; 
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.App .x-btn {
+  font-size: 50px;
+  background: #1A2A33;
+  font-weight: bolder;
+  border: none;
+  text-align: center;
+  justify-items: center;
+  width: 100%;
+  color: #A8BFC9;
+  border-radius: 15px;
+}
+
+.App .o-btn {
+  font-size: 50px;
+  background: #A8BFC9;
+  font-weight: bolder;
+  text-align: center;
+  justify-items: center;
+  width: 100%;
+  color: #1A2A33;
+  border-radius: 15px;
+}
+
+.App .titleCard {
+  color: #A8BFC9;
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.App .subTitle {
+  font-family: Outfit;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.875px;
+  color: #A8BFC9;
+}
