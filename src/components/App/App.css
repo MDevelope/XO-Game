@@ -26,14 +26,16 @@
 
 .App .card {
   width: 30%;
-  height: 20%;
+  height: 30%;
   border-radius: 10px;
   background: #1F3641;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
   box-shadow: 0px -8px 0px 0px #10212A inset;
+  padding: 35px 0;
 }
 
 .App .cpu-btn {
@@ -87,7 +89,7 @@
   width: 90%;
   height: 45%;
   border-radius: 15px;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background: #1A2A33;
   padding: 0 10px; 
@@ -95,9 +97,8 @@
   margin-bottom: 20px;
 }
 
-.App .x-btn {
+.o-btn .x-btn {
   font-size: 50px;
-  background: #1A2A33;
   font-weight: bolder;
   border: none;
   text-align: center;
@@ -105,17 +106,48 @@
   width: 100%;
   color: #A8BFC9;
   border-radius: 15px;
+  
 }
 
-.App .o-btn {
-  font-size: 50px;
-  background: #A8BFC9;
-  font-weight: bolder;
+.active {
+  background: #A8BFC9; /* Blue background for active button */
+  color: #1A2A33;
+  border: none;
   text-align: center;
   justify-items: center;
   width: 100%;
-  color: #1A2A33;
   border-radius: 15px;
+  padding: 10px 15px;
+  font-size: 30px;
+  font-weight: bolder;
+  animation: move 0.9s ease-in;
+}
+
+@keyframes move {
+  0%, 100% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+}
+
+.not-active {
+  background: transparent;
+  color: #A8BFC9;
+  border: none;
+  text-align: center;
+  justify-items: center;
+  width: 100%;
+  border-radius: 15px;
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+/* Hover effect */
+.x-btn:hover, .o-btn:hover {
+  opacity: 0.8;
 }
 
 .App .titleCard {
@@ -138,3 +170,6 @@
   letter-spacing: 0.875px;
   color: #A8BFC9;
 }
+
+
+
